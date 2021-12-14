@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@drawable/pozadina">
+    <ImageButton
+        android:id="@+id/strelica"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/button_arrow_left"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="200sp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/naziv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo1"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Foto_galerija"
+        android:textColor="@color/crna"
+        />
+
+    <View
+        android:id="@+id/linija1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/naziv1"
+        android:layout_marginTop="28dp"
+        android:background="@color/nekaCrna" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linija1"
+        android:padding="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/destinacija"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/plava1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:text="@string/lokacija"
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/destinacija"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginEnd="-285dp"
+                android:layout_marginRight="-285dp"
+                app:srcCompat="@drawable/icon_destinacija"
+                android:layout_alignTop="@id/destinacija"/>
+                 <TextView
+            android:id="@+id/labelaKontinent"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/destinacija"
+            android:text="@string/kontinent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+            <Spinner
+                android:id="@+id/spiner1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelaKontinent"
+                />
+            <TextView
+                android:id="@+id/labelaDrzava"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/spiner1"
+                android:text="@string/drzava"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/inputDrzava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelaDrzava"/>
+            <TextView
+                android:id="@+id/labelaMesto"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/inputDrzava"
+                android:text="@string/mesto"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/inputMesto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelaMesto"/>
+
+            <View
+                android:id="@+id/linija2"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/inputMesto"
+                android:layout_marginTop="28dp"
+                android:background="@color/nekaCrna" />
+            <TextView
+                android:id="@+id/Vreme"
+                android:layout_below="@id/linija2"
+                android:layout_width="200dp"
+                android:textColor="@color/plava1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:text="@string/vreme"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/Vreme"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginEnd="-285dp"
+                android:layout_marginRight="-285dp"
+                app:srcCompat="@drawable/kalendar"
+                android:layout_alignTop="@id/Vreme"/>
+            <TextView
+                android:id="@+id/Vreme_pocetka"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/Vreme"
+                android:text="@string/pocetak"/>
+
+            <DatePicker
+                android:id="@+id/piker1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/Vreme_pocetka"
+                android:layout_marginTop="18dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+            <TextView
+                android:id="@+id/Vreme_kraja"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/piker1"
+                android:text="@string/kraj"/>
+
+            <DatePicker
+                android:id="@+id/piker2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/Vreme_kraja"
+                android:layout_marginTop="18dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <View
+                android:id="@+id/linija3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/piker2"
+                android:layout_marginTop="28dp"
+                android:background="@color/nekaCrna" />
+
+            <TextView
+                android:id="@+id/Drustvo"
+                android:layout_below="@id/linija3"
+                android:layout_width="200dp"
+                android:textColor="@color/plava1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:text="@string/drustvo"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/Drustvo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginEnd="-285dp"
+                android:layout_marginRight="-285dp"
+                app:srcCompat="@drawable/drustvo"
+                android:layout_alignTop="@id/Drustvo"/>
+            <TextView
+                android:id="@+id/labelaDrustvo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/Drustvo"
+                android:text="@string/vrsta"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+            <Spinner
+                android:id="@+id/spiner2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/labelaDrustvo"
+                />
+            <TextView
+                android:id="@+id/labelaSkimSmo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/spiner2"
+                android:text="@string/koJos"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+            <EditText
+                android:id="@+id/inputDrustvo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/labelaSkimSmo"/>
+
+            <View
+                android:id="@+id/linija4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/inputDrustvo"
+                android:layout_marginTop="28dp"
+                android:background="@color/nekaCrna" />
+
+            <Button
+                android:id="@+id/SacuvajDetalje"
+                android:layout_width="match_parent"
+                android:layout_below="@id/linija4"
+                android:layout_height="40dp"
+                android:background="@color/zelena"
+                android:text="@string/sacuvajDetalje" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

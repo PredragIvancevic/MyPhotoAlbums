@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/pozadina">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/naziv"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Foto_galerija"
+        android:textColor="@color/crna"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalniView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/naziv"
+        android:layout_marginTop="20dp"
+        android:background="@color/pozadinaResetka">
+
+        <GridLayout
+            android:id="@+id/resetka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:rowCount="2"
+            android:columnOrderPreserved="false"
+            >
+
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/dodajOpis"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalniView"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dodavanje"
+        android:textSize="20dp" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

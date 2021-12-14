@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="@drawable/pozadina">
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/button_home"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/pregled"
+        android:layout_below="@+id/logo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pregled"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pregled">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/nekaCrna" />
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:background="@color/zuta">
+
+                <TextView
+                    android:id="@+id/labela1"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                     />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/labela1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginEnd="-285dp"
+                    android:layout_marginRight="-285dp"
+                    app:srcCompat="@drawable/icon_destinacija"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:background="@color/nekaCrna" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/plava"
+                android:minHeight="100dp">
+
+                <TextView
+                    android:id="@+id/labela2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/labela2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="-285dp"
+                    android:layout_marginRight="-285dp"
+                    app:srcCompat="@drawable/kalendar" />
+            </RelativeLayout>
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"
+                android:background="@color/nekaCrna" />
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/zelena"
+                android:minHeight="100dp"
+                >
+
+                <TextView
+                    android:id="@+id/labela3"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@id/labela3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="-8dp"
+                    android:layout_marginEnd="-285dp"
+                    android:layout_marginRight="-285dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/drustvo" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

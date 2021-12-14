@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Moji_foto_albumi</string>
+    <string name="Foto_galerija">Foto galerija</string>
+    <string name="dodavanje">Dodaj opis foto albuma</string>
+    <string name="lokacija">Lokacija</string>
+    <string name="kontinent">Kontinent</string>
+    <string name="drzava">Država</string>
+    <string name="mesto">Mesto</string>
+    <string name="vreme">Vreme</string>
+    <string name="pocetak">Početak putovanja</string>
+    <string name="kraj">Kraj putovanja</string>
+    <string name="drustvo">Društvo</string>
+    <string name="vrsta">Vrsta putovanja</string>
+    <string name="koJos">Ko je još bio s Vama?</string>
+    <string name="sacuvajDetalje">Sačuvaj detalje albuma</string>
+    <string name="pregled">Pregled sačuvanih podataka</string>
+    <string name="tekst1">Uspesno su sačuvani svi podaci o Vašem putovanju u </string>
+    <string name="tekst2">Rekli ste da je put počeo</string>
+    <string name="tekst3">i da ste se vratili</string>
+    <string name="tekst4">Na</string>
+    <string name="tekst5">su Vas pratili:</string>
+    <string name="tekst6">isli ste sami.</string>
+</resources>
